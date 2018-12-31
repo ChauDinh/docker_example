@@ -2,7 +2,7 @@ const app = require("./src/index");
 const mongoose = require("mongoose");
 
 // connect to mongo
-mongoose.connect("mongodb://0.0.0.0:27017/docker-node-mongo", { useNewUrlParser: true })
+mongoose.connect("mongodb://mongo:27017/docker-node-mongo", { useNewUrlParser: true })
  .then(() => console.log("Connected to MongoDB"))
  .catch(err => console.error(err));
 
